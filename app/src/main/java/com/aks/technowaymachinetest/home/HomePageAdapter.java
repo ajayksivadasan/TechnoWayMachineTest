@@ -42,7 +42,7 @@ public class HomePageAdapter extends RecyclerView.Adapter<HomePageAdapter.HomeVi
     @Override
     public void onBindViewHolder(@NonNull HomePageAdapter.HomeViewHolder holder, int position) {
         holder.tvTitleProducts.setText("Title: " + productsDTOList.get(position).getTitle());
-        holder.tvPriceProduct.setText("Price: " + productsDTOList.get(position).getTitle());
+        holder.tvPriceProduct.setText("Price: " + productsDTOList.get(position).getPrice());
         holder.tvProductDescription.setText("Description: " + productsDTOList.get(position).getDescription());
         Picasso.with(context).load(productsDTOList.get(position).getImageUrl()).into(holder.imProductImage);
     }

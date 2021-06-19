@@ -9,6 +9,7 @@ public class ApiClient {
     public static final String BASE_URL = "http://54.251.37.65/";
     public static final String BASE_URL_1 = "https://run.mocky.io/";
     private static Retrofit retrofit = null;
+    private static Retrofit retrofit1 = null;
 
     private ApiClient() {
     }
@@ -36,12 +37,12 @@ public class ApiClient {
         // add your other interceptors …
         // add logging as last interceptor
         httpClient.addInterceptor(logging);
-        if (retrofit == null) {
-            retrofit = new retrofit2.Retrofit.Builder()
+        if (retrofit1 == null) {
+            retrofit1 = new retrofit2.Retrofit.Builder()
                     .baseUrl(BASE_URL_1)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build()).build();
         }
-        return retrofit;
+        return retrofit1;
     }
 }
