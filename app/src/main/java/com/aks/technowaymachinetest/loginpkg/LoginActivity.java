@@ -9,9 +9,9 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.aks.technowaymachinetest.MainActivity;
 import com.aks.technowaymachinetest.R;
 import com.aks.technowaymachinetest.common.CommonToasts;
+import com.aks.technowaymachinetest.home.MainActivity;
 import com.aks.technowaymachinetest.retrofit.ApiClient;
 import com.aks.technowaymachinetest.retrofit.ApiInterface;
 
