@@ -1,6 +1,4 @@
 
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 z
 Japp/src/main/java/com/aks/technowaymachinetest/common/CommonFunctions.java,a\0\a0ac4b934e403e8e333c9e3f8a2bc35631846d1d
 w

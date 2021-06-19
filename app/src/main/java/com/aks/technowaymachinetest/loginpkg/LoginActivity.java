@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         commonToasts = new CommonToasts(context);
         apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
         btLogin.setOnClickListener(view -> {
-            if (etUserName.getText() != null || !etUserName.getText().toString().trim().equals("") || etPassword.getText() != null || !etPassword.getText().toString().trim().equals("")) {
+            if (etUserName.getText() != null && !etUserName.getText().toString().trim().equals("") && etPassword.getText() != null && !etPassword.getText().toString().trim().equals("")) {
                 LoginSendData sendData = new LoginSendData();
                 sendData.setUserID(etUserName.getText().toString().trim());
                 try {
