@@ -3,14 +3,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/basicColor"
     android:orientation="vertical"
-    tools:context=".loginpkg.LoginActivity">
+    tools:context=".loginpkg.LoginActivity"
+    tools:ignore="NestedWeights,Autofill,RtlSymmetry">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center|top"
         android:text="@string/sign_in"
         android:textAllCaps="true"
+        android:textColor="@color/white"
         android:textSize="@dimen/_40sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sp"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0dp"
+            android:layout_margin="@dimen/_2dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg_login"
+            android:hint="@string/user_name"
+            android:imeOptions="flagNoExtractUi|actionNext"
+            android:inputType="text"
+            android:paddingStart="@dimen/_10sp"
+            android:paddingLeft="@dimen/_10sp"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0dp"
+            android:layout_margin="@dimen/_2dp"
+            android:layout_weight="1"
+            android:background="@drawable/et_bg_login"
+            android:hint="@string/password"
+            android:imeOptions="flagNoExtractUi|actionNext"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_10sp"
+            android:paddingLeft="@dimen/_10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2dp"
+            android:background="@drawable/bt_bg_login"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white_transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_0dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2dp"
+            android:autofillHints="Google"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2dp"
+            android:autofillHints="Twitter"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2dp"
+            android:autofillHints="Twitter"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/twitter" />
+    </LinearLayout>
 </LinearLayout>
