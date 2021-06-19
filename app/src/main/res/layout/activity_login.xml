@@ -59,6 +59,7 @@
             android:paddingLeft="@dimen/_10sp" />
 
         <Button
+            android:id="@+id/btLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_2dp"
